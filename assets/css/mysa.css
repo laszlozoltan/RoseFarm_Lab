@@ -1,0 +1,218 @@
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-stretch:normal;font-display:swap;src:url(../fonts/archivo.woff2) format("woff2")}
+@font-face{font-family:Archivo;font-style:italic;font-weight:100 900;font-stretch:normal;font-display:swap;src:url(../fonts/archivo-italic.woff2) format("woff2")}
+:root{--wp--preset--color--primary:#090909;--wp--preset--color--secondary:#2e2e2e;--wp--preset--color--foreground:#090909;--wp--preset--color--background:#ffffff;--wp--preset--color--tertiary:#979797;--wp--preset--font-family--archivo:Archivo;--wp--preset--font-family--courier-prime:Courier Prime;--wp--preset--font-size--x-small:0.625rem;--wp--preset--font-size--small:0.75rem;--wp--preset--font-size--medium:0.9rem;--wp--preset--font-size--large:1.296rem;--wp--preset--font-size--x-large:1.866rem;--wp--preset--spacing--30:0.75rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2rem;--wp--preset--spacing--70:3rem;--wp--preset--spacing--80:4rem;--wp--style--global--content-size:400px;--wp--style--global--wide-size:1624px;--wp--style--block-gap:var(--wp--preset--spacing--50);}
+body{margin:0;font-family:var(--wp--preset--font-family--archivo);font-size:var(--wp--preset--font-size--small);line-height:1.666666667;color:var(--wp--preset--color--foreground);background-color:var(--wp--preset--color--background);padding-left:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50)}
+h1,h2,h3,h4,h5,h6{font-family:var(--wp--preset--font-family--archivo);font-weight:700}
+h1{font-size:var(--wp--preset--font-size--large);line-height:1.350308642}
+h2{font-size:var(--wp--preset--font-size--medium);line-height:1.388888889}
+h3{font-size:var(--wp--preset--font-size--small);line-height:calc(1em + 0.5rem)}
+h4{font-size:var(--wp--preset--font-size--x-small);line-height:1.2}
+h5{font-size:var(--wp--preset--font-size--x-small);line-height:1.2;text-transform:uppercase}
+h6{font-size:var(--wp--preset--font-size--x-small);font-weight:400;line-height:1.2}
+a:where(:not(.wp-element-button)){color:var(--wp--preset--color--primary)}
+a:where(:not(.wp-element-button)):hover{text-decoration:none}
+.wp-element-button,.wp-block-button__link{color:var(--wp--preset--color--background);background-color:var(--wp--preset--color--primary);border-radius:9999px;padding-bottom:0.375rem;padding-left:1.5rem;padding-right:1.5rem;padding-top:0.375rem}
+:where(p){line-height:calc(1em + 0.5rem)}
+.wp-block-post-title{font-size:var(--wp--preset--font-size--medium);line-height:1.388888889}
+.wp-block-post-title a:where(:not(.wp-element-button)){text-decoration:none}
+.wp-block-post-title a:where(:not(.wp-element-button)):hover{text-decoration:underline}
+.wp-block-site-title{font-size:var(--wp--preset--font-size--medium);font-weight:700;line-height:1.388888889}
+.wp-block-site-title a:where(:not(.wp-element-button)){text-decoration:none}
+.wp-block-site-title a:where(:not(.wp-element-button)):hover{text-decoration:underline}
+:where(ul,ol){padding-left:var(--wp--preset--spacing--50)}
+.wp-block-separator{color:var(--wp--preset--color--foreground);border-width:0 0 1px 0;border-style:solid;border-color:currentColor}
+.wp-block-pullquote{font-size:var(--wp--preset--font-size--small);font-style:italic;border-width:1px 0;border-style:solid;border-color:var(--wp--preset--color--foreground);padding:var(--wp--preset--spacing--50)}
+.wp-block-pullquote cite{display:block;}
+.wp-block-post-author .wp-block-post-author__byline{font-size:inherit;}.wp-block-post-author.wp-block-post-author .wp-block-post-author__name a{text-decoration:none;}.wp-block-post-author.wp-block-post-author .wp-block-post-author__bio{font-size:inherit;margin:0;}.wp-block-post-author .wp-block-post-author__avatar img{margin-top:4px;vertical-align:middle;}
+.wp-block-post-excerpt p.wp-block-post-excerpt__excerpt{line-height: inherit;}
+.wp-block-navigation a:where(:not(.wp-element-button)){text-decoration:none}
+.wp-block-navigation a:where(:not(.wp-element-button)):hover{text-decoration:underline}
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {border-color: var(--wp--preset--color--contrast);border-width:0.5px}
+.wp-block-gallery{margin-bottom:var(--wp--preset--spacing--50)}
+.has-primary-color{color:var(--wp--preset--color--primary)!important}
+.has-primary-background-color{background-color:var(--wp--preset--color--primary)!important}
+.has-secondary-color{color:var(--wp--preset--color--secondary)!important}
+.has-secondary-background-color{background-color:var(--wp--preset--color--secondary)!important}
+.has-foreground-color{color:var(--wp--preset--color--foreground)!important}
+.has-foreground-background-color{background-color:var(--wp--preset--color--foreground)!important}
+.has-background-color{color:var(--wp--preset--color--background)!important}
+.has-background-background-color{background-color:var(--wp--preset--color--background)!important}
+.has-tertiary-color{color:var(--wp--preset--color--tertiary)!important}
+.has-tertiary-background-color{background-color:var(--wp--preset--color--tertiary)!important}
+.has-x-small-font-size{font-size:var(--wp--preset--font-size--x-small)!important}
+.has-small-font-size{font-size:var(--wp--preset--font-size--small)!important}
+.has-medium-font-size{font-size:var(--wp--preset--font-size--medium)!important}
+.has-large-font-size{font-size:var(--wp--preset--font-size--large)!important}
+.has-x-large-font-size{font-size:var(--wp--preset--font-size--x-large)!important}
+.has-archivo-font-family{font-family:var(--wp--preset--font-family--archivo)!important}
+.has-courier-prime-font-family{font-family:var(--wp--preset--font-family--courier-prime)!important}
+
+.wp-site-blocks>*{margin-block-start:0;margin-block-end:0}
+.is-layout-flow>.alignleft,.is-layout-constrained>.alignleft{float:left;margin-inline-start:0;margin-inline-end:2em}
+.is-layout-flow>.alignright,.is-layout-constrained>.alignright{float:right;margin-inline-start:2em;margin-inline-end:0}
+.is-layout-flow>.aligncenter,.is-layout-constrained>.aligncenter{margin-left:auto!important;margin-right:auto!important}
+.is-layout-constrained>:where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:var(--wp--style--global--content-size);margin-left:auto!important;margin-right:auto!important}
+.is-layout-constrained>.alignwide{max-width:var(--wp--style--global--wide-size)}
+body .is-layout-flex{display:flex}
+.is-layout-flex{flex-wrap:wrap;align-items:center}
+.is-layout-flex>*{margin:0}
+:where(.is-layout-flow)>:first-child,:where(.is-layout-constrained)>:first-child{margin-block-start:0}
+:where(.is-layout-flow)>:last-child,:where(.is-layout-constrained)>:last-child{margin-block-end:0}
+:where(.is-layout-flow)>*,:where(.is-layout-constrained)>*{margin-block-start:var(--wp--style--block-gap);margin-block-end:0}
+:where(body .is-layout-flex){gap:var(--wp--style--block-gap)}
+:where(.wp-block-columns.is-layout-flex){gap:2em}
+:where(.wp-block-post-template.is-layout-flow)>*{margin-block-start:0}
+.wp-block-post-template{list-style:none;margin:0;padding:0}
+.wp-block-post-featured-image img{width:100%;height:auto;display:block}
+.wp-block-post-author__name{margin:0}
+.wp-block-post-navigation-link a{text-decoration:none}
+.wp-block-post-navigation-link__arrow-previous{margin-right:.5ch}.wp-block-post-navigation-link__arrow-next{margin-left:.5ch}
+.is-position-sticky{position:sticky;top:0;z-index:10}
+
+
+
+/*
+ * Control the hover stylings of outline block style.
+ * Unnecessary once block styles are configurable via theme.json
+ * https://github.com/WordPress/gutenberg/issues/42794
+ */
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-background):hover {
+	background-color: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--background);
+	border-color: var(--wp--preset--color--secondary);
+}
+
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+a {
+	text-decoration-color: var(--wp--preset--color--tertiary);
+	text-decoration-thickness: 0.5px !important;
+	text-underline-offset: 0.1em;
+}
+
+a:hover {
+	text-decoration-color: var(--wp--preset--color--tertiary) !important;
+}
+
+/*
+ * Navigation Block
+ * Reset the padding from List block
+ * https://github.com/WordPress/gutenberg/issues/50486
+ */
+.wp-block-navigation ul {
+	padding: unset;
+}
+
+/*
+ * Adjust the position of the close button
+ */
+.wp-block-navigation__responsive-container-close {
+	left: 0;
+}
+
+.has-modal-open .is-menu-open .wp-block-navigation__responsive-dialog {
+	margin-top: 48px;
+}
+
+.has-modal-open .admin-bar .is-menu-open .wp-block-navigation__responsive-dialog {
+	margin-top: 94px;
+}
+
+/*
+ * Responsive menu container padding.
+ * This ensures the responsive container inherits the same
+ * spacing defined above. This behavior may be built into
+ * the Block Editor in the future.
+ */
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: var(--wp--preset--spacing--50);
+}
+
+/* Adjust the top padding for the menu items */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: calc(1.5rem + var(--wp--preset--spacing--50));
+}
+
+/* Adjust the top padding for the submenu items */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+	padding: 0 var(--wp--preset--spacing--50);
+}
+
+/*
+ * Pull quote Block
+ * Reset the browser default margins for blockquote element
+ * https://github.com/WordPress/gutenberg/issues/44129
+ */
+.wp-block-pullquote blockquote,
+.wp-block-pullquote p {
+	margin: 0;
+}
+
+/*
+ * Needed to style Jetpack Contact Form
+ */
+.wp-block-jetpack-contact-form input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+.wp-block-jetpack-contact-form select,
+.wp-block-jetpack-contact-form textarea {
+	border: 1px solid #949494;
+	font-family: inherit;
+	font-size: 1em;
+	margin-bottom: var(--wp--preset--spacing--50);
+	padding: 8px;
+}
+
+.wp-block-jetpack-contact-form .wp-block-jetpack-button button {
+	padding: 0.5em 2em;
+}
+
+.wp-block-jetpack-contact-form.contact-form label {
+	font-weight: 400;
+	margin-bottom: 0;
+	text-transform: none;
+}
+
+.wp-block-jetpack-contact-form.contact-form label span {
+	opacity: 0.7;
+}
+
+.wp-block-jetpack-contact-form.contact-form select {
+	padding: 8px;
+}
+
+.wp-block-jetpack-contact-form.contact-form textarea {
+	margin-bottom: var(--wp--preset--spacing--50);
+}
+
+div[id^="contact-form-"] h4 {
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 700;
+	line-height: 1.388888889;
+}
+
+.contact-form-submission {
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-jetpack-mailchimp input:not([type="submit"]) {
+	border: 1px solid #949494;
+	font-family: inherit;
+	font-size: 1em;
+	padding: 8px;
+}
+
+.wp-block-jetpack-mailchimp .wp-block-jetpack-button button {
+	padding: 0.5em 2em;
+}
+
+.wp-block-jetpack-mailchimp .wp-block-jetpack-button,
+.wp-block-jetpack-mailchimp p {
+	margin-bottom: var(--wp--preset--spacing--50);
+}
+
+.wp-block-post-comments-form .comment-form input:not([type="submit"]):not([type="checkbox"]),
+.wp-block-post-comments-form .comment-form textarea {
+	line-height: inherit;
+}
